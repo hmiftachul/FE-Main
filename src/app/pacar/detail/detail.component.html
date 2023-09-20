@@ -1,0 +1,31 @@
+<div class="p-4 w-9/12 mx-auto" *ngIf="selected">
+    <div class="bg-white rounded-lg shadow-md p-2">
+        <div>
+            <img class="rounded-t-lg w-full h-48 object-cover" [src]="selected.urlImage" alt="{{ selected.name }}" />
+        </div>
+        <div class="mb-2 pt-2">
+            <span class="font-bold">Name: </span>
+            <span class="overflow-ellipsis overflow-hidden max-w-xs">{{ selected.name }}</span>
+        </div>
+        <div class="mb-2">
+            <span class="font-bold">Age: </span>
+            <span class="overflow-ellipsis overflow-hidden max-w-xs">{{ selected.umur }}</span>
+        </div>
+        <div class="mb-2">
+            <span class="font-bold">Instagram: </span>
+            <span class="overflow-ellipsis overflow-hidden max-w-xs">{{ selected.instagram }}</span>
+        </div>
+        <div class="mb-2">
+            <span class="font-bold">Negara: </span>
+            <span>{{ selected.national }}</span>
+        </div>
+        <div class="mb-2">
+            <span class="font-bold">Tarif Perjam: </span>
+            <span>{{ selected.tarifPerjam }}</span>
+        </div>
+        <div class="mb-2">
+            <span class="font-bold">Tambah Durasi: </span>
+            <span>{{ selected.tambahDurasi }}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+<div class="pt-14">
+    <div class="container mx-auto bg-purple-500 p-4 rounded-lg">
+        <div class="p-4 bg-white rounded-lg shadow-lg">
+            <div class="mb-4">
+                    <h5 class="text-2xl text-center pt-2 pb-6 font-semibold">{{ titleForm }}</h5>
+                    <form>
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input [ngModelOptions]="{standalone: true}" [(ngModel)]="newGirls.name" type="text"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder="Salsabila" required />
+                            <label for="floating_email"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-focus:scale-75 peer-focus:-translate-y-6">
+                                Nama</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input [ngModelOptions]="{standalone: true}" [(ngModel)]="newGirls.umur" type="number"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder="21" required />
+                            <label for="floating_password"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-focus:scale-75 peer-focus:-translate-y-6">
+                                Umur</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input [ngModelOptions]="{standalone: true}" [(ngModel)]="newGirls.instagram" type="text"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder="salsabila" required />
+                            <label for="floating_repeat_password"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-focus:scale-75 peer-focus:-translate-y-6">
+                                Instagram</label>
+                        </div>
+                        <div class="grid md:grid-cols-2 md:gap-6">
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="newGirls.national" type="text"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                    placeholder="Indonesia" required />
+                                <label for="floating_first_name"
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-focus:scale-75 peer-focus:-translate-y-6">
+                                    Negara</label>
+                            </div>
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="newGirls.tarifPerjam" type="number"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                    placeholder="Rp. 100000" required />
+                                <label for="floating_last_name"
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-focus:scale-75 peer-focus:-translate-y-6">
+                                    Tarif Perjam</label>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 md:gap-6">
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="newGirls.tambahDurasi" type="number"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                    placeholder="Rp. 100000" required />
+                                <label for="floating_phone"
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-focus:scale-75 peer-focus:-translate-y-6">
+                                    Tarif Tambah Durasi Sewa</label>
+                            </div>
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input [ngModelOptions]="{standalone: true}" [(ngModel)]="newGirls.urlImage" type="url" name="floating_last_name"
+                                    id="floating_last_name"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                     required />
+                                <label for="floating_last_name"
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0]  peer-focus:scale-75 peer-focus:-translate-y-6">
+                                    Url Image</label>
+                            </div>
+                        </div>
+                        <button (click)="onAddGirls()" type="submit"
+                            class="text-white bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center hover:border hover:border-blue-700 hover:bg-white hover:text-blue-700">Submit</button>
+                    </form>
+                
+            </div>
+        </div>
+    </div>
+    </div>
